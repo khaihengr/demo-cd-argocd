@@ -19,3 +19,6 @@ spec:
         image: praqma/network-multitool
         ports:
         - containerPort: 80
+        envFrom:
+        - secretRef:
+            name: testsecret
